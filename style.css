@@ -92,7 +92,7 @@ a{
   }
 
   .text {
-    width: calc(100% - 100px);  /* Reduces width to make space or improve layout */
+    width:80%;  /* Reduces width to make space or improve layout */
     font-size: 0.5rem;
   }
 }
