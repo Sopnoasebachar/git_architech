@@ -92,7 +92,11 @@ a{
   }
 
   .text {
-    width:80%;  /* Reduces width to make space or improve layout */
+    width:90%;
     font-size: 0.5rem;
+  }
+  .headline{
+    width:70%;
+    font-size: 1rem;
   }
 }
