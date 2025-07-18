@@ -71,10 +71,32 @@ a{
   border:none;
   margin-top:-30px;
 }
-
+.section-01{
+  display:flex;
+  max-width:1100px;
+  padding:100px 180px;
+  justify-content: space-between;
+  gap:73px;
+  align-items: center;
+  /* background-color: aqua; */
+  margin:70px auto;
+}
+.section-01 .img{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:24px;
+}
+.section-01-box{
+  display:flex;
+  flex-direction: column;
+  gap:30px;
+}
+.section-01-text{
+  margin-top:-30px;
+}
 @media screen and (max-width: 576px) {
   .header {
-    width: calc(100% - 40px);  /* Effective for padding/margin adjustments */
+    width: calc(100% - 40px); 
     padding: 30px 20px;
     margin: 0;
   }
@@ -98,5 +120,28 @@ a{
   .headline{
     width:70%;
     font-size: 1rem;
+  }
+  .section-01{
+    width: calc(100% - 40px);  /* Effective for padding/margin adjustments */
+    padding: 30px 20px;
+    margin: 0;
+    gap:20px;
+    
+  }
+  .section-01 .img{
+    flex-basis: 50%;
+    grid-template-columns:repeat(1,1fr);
+  }
+  .section-01 .img img{
+    width:100%;
+  }
+  .section-01-box{
+    font-size:1rem;
+    flex-basis: 50%;
+
+  }
+  .btn{
+    font-size:1rem;
+    padding:15px 20px;
   }
 }
